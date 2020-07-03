@@ -1,4 +1,5 @@
 const  path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     //程序入口
@@ -15,6 +16,11 @@ module.exports = {
         rules: [
             {test: /\.tsx?$/, loader: 'awesome-typescript-loader'},
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'index.html'
+        })
+    ]
 
 }
