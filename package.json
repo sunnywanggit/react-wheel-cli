@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
   "devDependencies": {
+    "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "^5.2.1",
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",
@@ -11,6 +16,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@types/react": "^16.9.41",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "typescript": "^3.9.6"
   }
 }
