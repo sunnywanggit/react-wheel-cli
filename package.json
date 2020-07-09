@@ -9,8 +9,11 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^26.1.0",
     "cross-env": "^7.0.2",
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",
